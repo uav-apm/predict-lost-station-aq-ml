@@ -1,0 +1,116 @@
+{
+  "before": {
+    "rows": 175296,
+    "columns": {
+      "PM2.5 (\u00b5g/m\u00b3)": {
+        "dtype": "float64",
+        "row_count": 175296,
+        "present_count": 166228,
+        "missing_count": 9068,
+        "present_pct_of_all_rows": 94.82703541438481,
+        "missing_pct_of_all_rows": 5.172964585615189,
+        "unique": 2851,
+        "mean": 102.98151725341097,
+        "median": 68.0,
+        "min": 0.5,
+        "max": 992.0
+      },
+      "NO2 (\u00b5g/m\u00b3)": {
+        "dtype": "float64",
+        "row_count": 175296,
+        "present_count": 167286,
+        "missing_count": 8010,
+        "present_pct_of_all_rows": 95.43058598028477,
+        "missing_pct_of_all_rows": 4.569414019715225,
+        "unique": 11208,
+        "mean": 40.92587073435115,
+        "median": 32.21,
+        "min": 0.1,
+        "max": 473.6
+      },
+      "RH (%)": {
+        "dtype": "float64",
+        "row_count": 175296,
+        "present_count": 169964,
+        "missing_count": 5332,
+        "present_pct_of_all_rows": 96.9582876962395,
+        "missing_pct_of_all_rows": 3.0417123037604963,
+        "unique": 7032,
+        "mean": 61.37579595286845,
+        "median": 63.48,
+        "min": 0.28,
+        "max": 100.0
+      },
+      "WS (m/s)": {
+        "dtype": "float64",
+        "row_count": 175296,
+        "present_count": 128354,
+        "missing_count": 46942,
+        "present_pct_of_all_rows": 73.22129426798102,
+        "missing_pct_of_all_rows": 26.778705732018988,
+        "unique": 460,
+        "mean": 1.0086170928318037,
+        "median": 0.8500000000000001,
+        "min": 0.1,
+        "max": 18.65
+      }
+    }
+  },
+  "after": {
+    "rows": 162575,
+    "columns": {
+      "PM2.5 (\u00b5g/m\u00b3)": {
+        "dtype": "float64",
+        "row_count": 162575,
+        "present_count": 162575,
+        "missing_count": 0,
+        "present_pct_of_all_rows": 100.0,
+        "missing_pct_of_all_rows": 0.0,
+        "unique": 2819,
+        "mean": 102.91862617253575,
+        "median": 68.0,
+        "min": 0.5,
+        "max": 984.0
+      },
+      "NO2 (\u00b5g/m\u00b3)": {
+        "dtype": "float64",
+        "row_count": 162575,
+        "present_count": 162575,
+        "missing_count": 0,
+        "present_pct_of_all_rows": 100.0,
+        "missing_pct_of_all_rows": 0.0,
+        "unique": 11049,
+        "mean": 40.53411399866729,
+        "median": 32.0,
+        "min": 0.1,
+        "max": 473.6
+      },
+      "RH (%)": {
+        "dtype": "float64",
+        "row_count": 162575,
+        "present_count": 161644,
+        "missing_count": 931,
+        "present_pct_of_all_rows": 99.42734122712594,
+        "missing_pct_of_all_rows": 0.5726587728740581,
+        "unique": 6992,
+        "mean": 61.39639115381126,
+        "median": 63.5,
+        "min": 0.28,
+        "max": 100.0
+      },
+      "WS (m/s)": {
+        "dtype": "float64",
+        "row_count": 162575,
+        "present_count": 121168,
+        "missing_count": 41407,
+        "present_pct_of_all_rows": 74.53052437336613,
+        "missing_pct_of_all_rows": 25.469475626633866,
+        "unique": 456,
+        "mean": 1.0143221945288086,
+        "median": 0.88,
+        "min": 0.1,
+        "max": 18.65
+      }
+    }
+  }
+}

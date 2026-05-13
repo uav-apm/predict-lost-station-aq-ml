@@ -1,0 +1,8 @@
+# Delhi experiment variant: Bi-LSTM NO2-only model.
+
+extends: ../delhi_bilstm_no2_base.yaml
+data:
+  target_station_id: "1421"
+  input_station_ids: ["124", "1426", "5024"]
+
+

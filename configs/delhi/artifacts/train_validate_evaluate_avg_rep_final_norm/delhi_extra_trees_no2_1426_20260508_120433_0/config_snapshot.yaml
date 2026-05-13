@@ -1,0 +1,140 @@
+data:
+  folder: configs/delhi/data
+  file_pattern: '**/*.csv'
+  datetime_col: Timestamp
+  sort_col: Timestamp
+  columns:
+  - "PM2.5 (\xB5g/m\xB3)"
+  - "NO2 (\xB5g/m\xB3)"
+  - RH (%)
+  - WS (m/s)
+  normalization: none
+  station_id_col: station_id
+  target_station_id: '1426'
+  input_station_ids:
+  - '124'
+  - '1421'
+  - '5024'
+  station_history_lags: 1
+  train_years:
+  - '2019'
+  - '2020'
+  - '2021'
+  - '2022'
+  - '2023'
+  train_periods:
+  - start: '2019'
+    end: '2023'
+  target_pollutant: "NO2 (\xB5g/m\xB3)"
+  impute_columns:
+  - "PM2.5 (\xB5g/m\xB3)"
+  - "NO2 (\xB5g/m\xB3)"
+  missing_value_strategy: drop
+  drop_missing_values: false
+  imputation_top_k: 3
+  rebuild_cache: false
+  allow_target_history: false
+  target_history_lags: 1
+  time_features:
+    enabled: false
+    attributes:
+    - month
+    - day
+    - day_of_week
+    - hour
+  validation_periods:
+  - start: '2024'
+    end: '2024'
+  testing_periods:
+  - start: '2025'
+    end: '2025'
+  test_time_steps: null
+  imputation_plot_period:
+  - start: '2024-01-01'
+    end: '2024-01-07'
+  imputation_plot_station_layout: combined
+model:
+  datetime_col: Timestamp
+  algorithm: extra_trees
+  params:
+    verbose: 1
+    n_estimators: 500
+    max_depth: 20
+    min_samples_split: 6
+    min_samples_leaf: 2
+    max_features: sqrt
+    n_jobs: -1
+    random_state: 42
+  algorithm_name: Extra Trees (NO2)
+  validation:
+    algorithm: random_search
+    metric: RMSE
+    max_trials: 5
+    random_state: 42
+    param_grid:
+      random_state:
+      - 42
+      - 50
+      - 100
+      n_estimators:
+      - 300
+      - 500
+      - 800
+      max_depth:
+      - 12
+      - 20
+      - 30
+      min_samples_split:
+      - 4
+      - 6
+      - 10
+      min_samples_leaf:
+      - 1
+      - 2
+      - 4
+      max_features:
+      - sqrt
+      - log2
+      - 0.8
+  target: "NO2 (\xB5g/m\xB3)"
+artifacts:
+  dir: configs/delhi/artifacts
+  dump_training_data: true
+  generate_training_loss_plot: false
+  save_training_normalization: true
+eval:
+  horizon: 0
+  store_details: true
+  use_training_normalization: true
+  separate_validation_period_results: true
+  only_separate_validation_period_results: false
+  attribution:
+    method: auto
+    params:
+      n_repeats: 5
+      random_state: 42
+  prediction_plot_period:
+  - start: '2025-01-01'
+    end: '2025-01-07'
+  generate_prediction_plot_files: false
+plot:
+  title_templates:
+    prediction_static: 'Prediction vs Actual ({target})
+
+      {algorithm} | Station {station_id}'
+    scatter_static: 'Actual vs Predicted - {target}
+
+      {algorithm} | Station {station_id}'
+    baseline_scatter_static: 'Actual vs Predicted - {target}
+
+      {algorithm} | Station {station_id}'
+    metrics_by_period: Metrics by Period - Station {station_id} - {pollutant}
+    metrics_by_station: 'Metrics by Station - {pollutant} - {period_name}
+
+      {period_start} to {period_end}'
+  metrics_graph:
+    metrics:
+    - RMSE
+    - R2
+    group_output_by: pollutant
+    comparison_mode: stations

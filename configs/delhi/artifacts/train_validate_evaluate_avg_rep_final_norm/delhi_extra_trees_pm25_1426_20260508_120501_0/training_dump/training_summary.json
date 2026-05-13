@@ -1,0 +1,42 @@
+{
+  "row_count": 33356,
+  "feature_count": 3,
+  "feature_names": [
+    "neighbor__124",
+    "neighbor__1421",
+    "neighbor__5024"
+  ],
+  "target_columns": [
+    "target_value"
+  ],
+  "target_station_id": "1426",
+  "input_station_ids": [
+    "124",
+    "1421",
+    "5024"
+  ],
+  "target_pollutant": "PM2.5 (\u00b5g/m\u00b3)",
+  "horizon": 0,
+  "normalization": "none",
+  "algorithm": "extra_trees",
+  "model_params": {
+    "verbose": 1,
+    "n_estimators": 500,
+    "max_depth": 20,
+    "min_samples_split": 6,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "allow_target_history": false,
+  "time_features": {
+    "enabled": false,
+    "attributes": [
+      "month",
+      "day",
+      "day_of_week",
+      "hour"
+    ]
+  }
+}

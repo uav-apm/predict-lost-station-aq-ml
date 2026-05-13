@@ -1,0 +1,50 @@
+[
+  {
+    "id": "baseline_average_of_other_stations",
+    "name": "Baseline: Average of Other Stations",
+    "algorithm_name": "Baseline: Average of Other Stations",
+    "metrics": {
+      "MSE": 1672.6993389514237,
+      "RMSE": 40.89864715307126,
+      "MAE": 23.760716780954848,
+      "R2": 0.7998449205081862,
+      "IA": 0.9487383267234593
+    }
+  },
+  {
+    "id": "baseline_replace_with_station_124",
+    "name": "Baseline: Replace with Station 124",
+    "algorithm_name": "Baseline: Replace with Station 124",
+    "metrics": {
+      "MSE": 3730.296414736706,
+      "RMSE": 61.0761525862321,
+      "MAE": 35.443458403415704,
+      "R2": 0.5536330062235194,
+      "IA": 0.8910497592967761
+    }
+  },
+  {
+    "id": "baseline_replace_with_station_1421",
+    "name": "Baseline: Replace with Station 1421",
+    "algorithm_name": "Baseline: Replace with Station 1421",
+    "metrics": {
+      "MSE": 2585.635965053694,
+      "RMSE": 50.84914910845307,
+      "MAE": 30.77032345710959,
+      "R2": 0.6906029911827184,
+      "IA": 0.9148861765445296
+    }
+  },
+  {
+    "id": "baseline_replace_with_station_1426",
+    "name": "Baseline: Replace with Station 1426",
+    "algorithm_name": "Baseline: Replace with Station 1426",
+    "metrics": {
+      "MSE": 1570.156653952646,
+      "RMSE": 39.62520225756136,
+      "MAE": 20.716920688316726,
+      "R2": 0.8121151706298253,
+      "IA": 0.9570890178524765
+    }
+  }
+]

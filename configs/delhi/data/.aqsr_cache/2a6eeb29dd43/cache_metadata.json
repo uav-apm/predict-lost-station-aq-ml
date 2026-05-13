@@ -1,0 +1,53 @@
+{
+  "signature": {
+    "cache_format": 4,
+    "files": [
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2024-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+        "size": 1098849,
+        "mtime_ns": 1774341386383590300
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data-1Hr-2024-site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+        "size": 1103982,
+        "mtime_ns": 1774341386427958200
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2024-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+        "size": 1097370,
+        "mtime_ns": 1774341386764253000
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2024-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+        "size": 1097320,
+        "mtime_ns": 1774341386983272600
+      }
+    ],
+    "datetime_col": "Timestamp",
+    "sort_col": "Timestamp",
+    "columns": [
+      "PM2.5 (\u00b5g/m\u00b3)",
+      "NO2 (\u00b5g/m\u00b3)",
+      "RH (%)",
+      "WS (m/s)"
+    ],
+    "station_id_col": "station_id",
+    "station_id_from": "auto",
+    "station_id_regex": null,
+    "missing_value_strategy": "drop",
+    "drop_missing_values": false,
+    "impute_columns": [
+      "PM2.5 (\u00b5g/m\u00b3)",
+      "NO2 (\u00b5g/m\u00b3)"
+    ],
+    "slice": {
+      "mode": "train_validation_tuning",
+      "validation_periods": [
+        {
+          "start": "2024-01-01T00:00:00",
+          "end": "2024-12-31T23:59:59"
+        }
+      ]
+    }
+  }
+}

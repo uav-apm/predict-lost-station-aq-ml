@@ -1,0 +1,20 @@
+{
+  "before": {
+    "total_missing": 10708,
+    "missing_by_column": {
+      "PM2.5 (\u00b5g/m\u00b3)": 985,
+      "NO2 (\u00b5g/m\u00b3)": 414,
+      "RH (%)": 345,
+      "WS (m/s)": 8964
+    }
+  },
+  "after": {
+    "total_missing": 8516,
+    "missing_by_column": {
+      "PM2.5 (\u00b5g/m\u00b3)": 0,
+      "NO2 (\u00b5g/m\u00b3)": 0,
+      "RH (%)": 30,
+      "WS (m/s)": 8486
+    }
+  }
+}

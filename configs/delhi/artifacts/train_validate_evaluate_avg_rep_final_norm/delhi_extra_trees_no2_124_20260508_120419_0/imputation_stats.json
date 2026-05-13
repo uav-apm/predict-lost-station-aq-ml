@@ -1,0 +1,96 @@
+{
+  "before": {
+    "total_missing": 69352,
+    "missing_by_column": {
+      "PM2.5 (\u00b5g/m\u00b3)": 9068,
+      "NO2 (\u00b5g/m\u00b3)": 8010,
+      "RH (%)": 5332,
+      "WS (m/s)": 46942
+    }
+  },
+  "after": {
+    "total_missing": 42338,
+    "missing_by_column": {
+      "PM2.5 (\u00b5g/m\u00b3)": 0,
+      "NO2 (\u00b5g/m\u00b3)": 0,
+      "RH (%)": 931,
+      "WS (m/s)": 41407
+    }
+  },
+  "before_by_station": {
+    "124": {
+      "total_missing": 8020,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 3580,
+        "NO2 (\u00b5g/m\u00b3)": 2169,
+        "RH (%)": 1141,
+        "WS (m/s)": 1130
+      }
+    },
+    "1421": {
+      "total_missing": 5650,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 2011,
+        "NO2 (\u00b5g/m\u00b3)": 2390,
+        "RH (%)": 590,
+        "WS (m/s)": 659
+      }
+    },
+    "1426": {
+      "total_missing": 6342,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 1441,
+        "NO2 (\u00b5g/m\u00b3)": 1515,
+        "RH (%)": 2057,
+        "WS (m/s)": 1329
+      }
+    },
+    "5024": {
+      "total_missing": 49340,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 2036,
+        "NO2 (\u00b5g/m\u00b3)": 1936,
+        "RH (%)": 1544,
+        "WS (m/s)": 43824
+      }
+    }
+  },
+  "after_by_station": {
+    "124": {
+      "total_missing": 69,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 39,
+        "WS (m/s)": 30
+      }
+    },
+    "1421": {
+      "total_missing": 55,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 19,
+        "WS (m/s)": 36
+      }
+    },
+    "1426": {
+      "total_missing": 871,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 809,
+        "WS (m/s)": 62
+      }
+    },
+    "5024": {
+      "total_missing": 41343,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 64,
+        "WS (m/s)": 41279
+      }
+    }
+  }
+}

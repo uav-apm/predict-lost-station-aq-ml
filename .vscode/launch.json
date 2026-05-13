@@ -1,0 +1,101 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "AQSR: Train Dir (Delhi)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv312/Scripts/python.exe",
+      "program": "${workspaceFolder}/.vscode/debug_entry.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "args": [
+        "train",
+        "--config-dir",
+        "configs/delhi"
+      ]
+    },
+    {
+      "name": "AQSR: Eval Dir (Delhi)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv312/Scripts/python.exe",
+      "program": "${workspaceFolder}/.vscode/debug_entry.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "args": [
+        "eval",
+        "--config-dir",
+        "configs/delhi"
+      ]
+    },    {
+      "name": "AQSR: Plot Dir (Delhi)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv312/Scripts/python.exe",
+      "program": "${workspaceFolder}/.vscode/debug_entry.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "args": [
+        "plot",
+        "--config-dir",
+        "configs/delhi"
+      ]
+    },
+    {
+      "name": "AQSR: Predict (Delhi)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv312/Scripts/python.exe",
+      "program": "${workspaceFolder}/.vscode/debug_entry.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "args": [
+        "predict",
+        "--config",
+        "configs/delhi/delhi.yaml",
+        "--input",
+        "12.5,15.1,17.2"
+      ]
+    },
+    {
+      "name": "AQSR: Train (Example)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv312/Scripts/python.exe",
+      "program": "${workspaceFolder}/.vscode/debug_entry.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "args": [
+        "train",
+        "--config",
+        "configs/example/example.yaml"
+      ]
+    }
+  ]
+}

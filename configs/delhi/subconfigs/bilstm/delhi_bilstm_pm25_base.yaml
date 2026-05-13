@@ -1,0 +1,10 @@
+# Shared baseline for Delhi Bi-LSTM PM2.5-only experiments.
+
+extends: delhi_bilstm_base.yaml
+
+data:
+  target_pollutant: "PM2.5 (µg/m³)"
+
+model:
+  algorithm_name: BiLSTM (PM2.5)
+  target: "PM2.5 (µg/m³)"

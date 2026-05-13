@@ -1,0 +1,50 @@
+{
+  "row_count": 33356,
+  "feature_count": 3,
+  "feature_names": [
+    "neighbor__5024",
+    "neighbor__1421",
+    "neighbor__1426"
+  ],
+  "target_columns": [
+    "target_value"
+  ],
+  "target_station_id": "124",
+  "input_station_ids": [
+    "5024",
+    "1421",
+    "1426"
+  ],
+  "target_pollutant": "NO2 (\u00b5g/m\u00b3)",
+  "horizon": 0,
+  "normalization": "zscore",
+  "algorithm": "src.lstm_regressor.LocalLSTMRegressor",
+  "model_params": {
+    "verbose": 1,
+    "timesteps": 1,
+    "lstm_units": [
+      64,
+      32
+    ],
+    "bidirectional": true,
+    "dropout": 0.1,
+    "dense_units": 32,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs": 80,
+    "validation_split": 0.1,
+    "patience": 10,
+    "random_state": 42,
+    "fallback_on_missing_backend": false
+  },
+  "allow_target_history": false,
+  "time_features": {
+    "enabled": false,
+    "attributes": [
+      "month",
+      "day",
+      "day_of_week",
+      "hour"
+    ]
+  }
+}

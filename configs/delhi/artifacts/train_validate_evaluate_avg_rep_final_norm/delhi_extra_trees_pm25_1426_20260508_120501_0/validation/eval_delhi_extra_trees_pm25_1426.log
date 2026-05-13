@@ -1,0 +1,14 @@
+2026-05-08T12:19:24 [delhi_extra_trees_pm25_1426.yaml] [note] Starting evaluation run for config: delhi_extra_trees_pm25_1426.yaml
+2026-05-08T12:19:24 [delhi_extra_trees_pm25_1426.yaml] [phase] 1/6 ( 16%) Loading configuration and resolving run directory
+2026-05-08T12:19:24 [delhi_extra_trees_pm25_1426.yaml] [note] Persisting evaluation logs to D:\source\research\aq-spatial-reconstruction\configs\delhi\artifacts\train_validate_evaluate_avg_rep_final_norm\delhi_extra_trees_pm25_1426_20260508_120501_0\validation\eval_delhi_extra_trees_pm25_1426.log
+2026-05-08T12:19:24 [delhi_extra_trees_pm25_1426.yaml] [phase] 2/6 ( 33%) Preprocessing evaluation-year data
+2026-05-08T12:19:26 [delhi_extra_trees_pm25_1426.yaml] [note] Reusing cached preprocessing from D:\source\research\aq-spatial-reconstruction\configs\delhi\data\.aqsr_cache\11ff861d58aa
+2026-05-08T12:19:27 [delhi_extra_trees_pm25_1426.yaml] [phase] 3/6 ( 50%) Building correlation analysis for evaluation years
+2026-05-08T12:19:27 [delhi_extra_trees_pm25_1426.yaml] [phase] 4/6 ( 66%) Applying configurable missing-value strategy to evaluation years
+2026-05-08T12:19:27 [delhi_extra_trees_pm25_1426.yaml] [note] Evaluation-side dropped rows with missing values in configured columns: 1109
+2026-05-08T12:19:28 [delhi_extra_trees_pm25_1426.yaml] [phase] 5/6 ( 83%) Running evaluation on configured test window
+2026-05-08T12:19:28 [delhi_extra_trees_pm25_1426.yaml] [note] Preparing training-window predictions for scatter plot artifacts.
+2026-05-08T12:19:32 [delhi_extra_trees_pm25_1426.yaml] [note] Reusing cached preprocessing from D:\source\research\aq-spatial-reconstruction\configs\delhi\data\.aqsr_cache\aaf33c04a6f5
+2026-05-08T12:19:34 [delhi_extra_trees_pm25_1426.yaml] [phase] 6/6 (100%) Writing validation files and metrics
+2026-05-08T12:19:34 [delhi_extra_trees_pm25_1426.yaml] [note] Generating separate evaluation outputs per validation period.
+2026-05-08T12:19:35 [delhi_extra_trees_pm25_1426.yaml] [note] Evaluation complete. Metrics written to D:\source\research\aq-spatial-reconstruction\configs\delhi\artifacts\train_validate_evaluate_avg_rep_final_norm\delhi_extra_trees_pm25_1426_20260508_120501_0\validation\metrics.json

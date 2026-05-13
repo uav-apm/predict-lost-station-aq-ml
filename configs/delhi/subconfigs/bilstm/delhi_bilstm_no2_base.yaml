@@ -1,0 +1,10 @@
+# Shared baseline for Delhi Bi-LSTM NO2-only experiments.
+
+extends: delhi_bilstm_base.yaml
+
+data:
+  target_pollutant: "NO2 (µg/m³)"
+
+model:
+  algorithm_name: BiLSTM (NO2)
+  target: "NO2 (µg/m³)"

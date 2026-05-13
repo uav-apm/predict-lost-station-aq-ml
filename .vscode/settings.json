@@ -1,0 +1,16 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "AQSR PowerShell (.venv312 auto)": {
+      "source": "PowerShell",
+      "args": [
+        "-NoExit",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/bootstrap-venv312.ps1",
+        "-Activate"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "AQSR PowerShell (.venv312 auto)"
+}

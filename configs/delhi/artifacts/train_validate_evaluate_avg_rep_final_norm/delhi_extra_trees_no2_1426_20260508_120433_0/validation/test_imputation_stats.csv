@@ -1,0 +1,13 @@
+station_id,column,missing_before,missing_after,method,selected_features
+__all__,NO2 (µg/m³),414,0,drop_rows,
+__all__,PM2.5 (µg/m³),985,0,drop_rows,
+__all__,RH (%),345,30,,
+__all__,WS (m/s),8964,8486,,
+124,NO2 (µg/m³),0,0,drop_rows,
+124,PM2.5 (µg/m³),0,0,drop_rows,
+1421,NO2 (µg/m³),0,0,drop_rows,
+1421,PM2.5 (µg/m³),0,0,drop_rows,
+1426,NO2 (µg/m³),0,0,drop_rows,
+1426,PM2.5 (µg/m³),0,0,drop_rows,
+5024,NO2 (µg/m³),0,0,drop_rows,
+5024,PM2.5 (µg/m³),0,0,drop_rows,

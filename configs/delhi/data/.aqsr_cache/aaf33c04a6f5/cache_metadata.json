@@ -1,0 +1,142 @@
+{
+  "signature": {
+    "cache_format": 4,
+    "files": [
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2019-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+        "size": 1200100,
+        "mtime_ns": 1774341386236152400
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2020-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+        "size": 1205841,
+        "mtime_ns": 1774341386266439300
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2021-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+        "size": 1211776,
+        "mtime_ns": 1774341386298111600
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2022-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+        "size": 1232075,
+        "mtime_ns": 1774341386326015100
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2023-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+        "size": 1174688,
+        "mtime_ns": 1774341386353479900
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2019_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+        "size": 1262104,
+        "mtime_ns": 1774341386499014000
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2020_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+        "size": 1265887,
+        "mtime_ns": 1774341386525004900
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2021_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+        "size": 1273745,
+        "mtime_ns": 1774341386554003100
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2022_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+        "size": 1266861,
+        "mtime_ns": 1774341386578398000
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2023_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+        "size": 1291674,
+        "mtime_ns": 1774341386605653500
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2019-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+        "size": 1270493,
+        "mtime_ns": 1774341386632005600
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2020-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+        "size": 1258344,
+        "mtime_ns": 1774341386655002100
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2021-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+        "size": 1267491,
+        "mtime_ns": 1774341386679223400
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2022-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+        "size": 1275884,
+        "mtime_ns": 1774341386706220300
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2023-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+        "size": 1293623,
+        "mtime_ns": 1774341386737240400
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2019-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+        "size": 1222296,
+        "mtime_ns": 1774341386861181300
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2020-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+        "size": 1232397,
+        "mtime_ns": 1774341386884181300
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2021-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+        "size": 1235309,
+        "mtime_ns": 1774341386907242300
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2022-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+        "size": 1251976,
+        "mtime_ns": 1774341386931235500
+      },
+      {
+        "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2023-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+        "size": 1287330,
+        "mtime_ns": 1774341386958279300
+      }
+    ],
+    "datetime_col": "Timestamp",
+    "sort_col": "Timestamp",
+    "columns": [
+      "PM2.5 (\u00b5g/m\u00b3)",
+      "NO2 (\u00b5g/m\u00b3)",
+      "RH (%)",
+      "WS (m/s)"
+    ],
+    "station_id_col": "station_id",
+    "station_id_from": "auto",
+    "station_id_regex": null,
+    "missing_value_strategy": "drop",
+    "drop_missing_values": false,
+    "impute_columns": [
+      "PM2.5 (\u00b5g/m\u00b3)",
+      "NO2 (\u00b5g/m\u00b3)"
+    ],
+    "slice": {
+      "mode": "train",
+      "train_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "train_periods": [
+        {
+          "start": "2019-01-01T00:00:00",
+          "end": "2023-12-31T23:59:59"
+        }
+      ],
+      "validation_periods_excluded": [],
+      "testing_periods_excluded": []
+    }
+  }
+}

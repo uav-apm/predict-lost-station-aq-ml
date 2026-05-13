@@ -1,0 +1,17 @@
+2026-05-08T12:04:17 [delhi_extra_trees_no2_124.yaml] [note] Starting training run for config: delhi_extra_trees_no2_124.yaml
+2026-05-08T12:04:17 [delhi_extra_trees_no2_124.yaml] [phase] 1/8 ( 12%) Loading configuration and input dataset
+2026-05-08T12:04:17 [delhi_extra_trees_no2_124.yaml] [phase] 2/8 ( 25%) Preprocessing raw data
+2026-05-08T12:04:19 [delhi_extra_trees_no2_124.yaml] [note] Reusing cached preprocessing from D:\source\research\aq-spatial-reconstruction\configs\delhi\data\.aqsr_cache\aaf33c04a6f5
+2026-05-08T12:04:19 [delhi_extra_trees_no2_124.yaml] [phase] 3/8 ( 37%) Building correlation analysis and heatmap
+2026-05-08T12:04:19 [delhi_extra_trees_no2_124.yaml] [phase] 4/8 ( 50%) Applying configurable missing-value strategy
+2026-05-08T12:04:19 [delhi_extra_trees_no2_124.yaml] [note] Dropped rows with missing values in configured columns: 12721
+2026-05-08T12:04:19 [delhi_extra_trees_no2_124.yaml] [phase] 5/8 ( 62%) Creating run directory, optional training dumps, and training regression pipeline
+2026-05-08T12:04:19 [delhi_extra_trees_no2_124.yaml] [note] Persisting training logs to D:\source\research\aq-spatial-reconstruction\configs\delhi\artifacts\train_validate_evaluate_avg_rep_final_norm\delhi_extra_trees_no2_124_20260508_120419_0\train.log
+2026-05-08T12:04:19 [delhi_extra_trees_no2_124.yaml] [note] Dumping pre-fit training data to D:\source\research\aq-spatial-reconstruction\configs\delhi\artifacts\train_validate_evaluate_avg_rep_final_norm\delhi_extra_trees_no2_124_20260508_120419_0\training_dump
+2026-05-08T12:04:20 [delhi_extra_trees_no2_124.yaml] [note] Reusing cached preprocessing from D:\source\research\aq-spatial-reconstruction\configs\delhi\data\.aqsr_cache\2a6eeb29dd43
+2026-05-08T12:04:24 [delhi_extra_trees_no2_124.yaml] [note] Model validation tuning completed with random_search (5 trials); best RMSE=25.397423
+2026-05-08T12:04:24 [delhi_extra_trees_no2_124.yaml] [phase] 6/8 ( 75%) Saving trained artifacts
+2026-05-08T12:04:25 [delhi_extra_trees_no2_124.yaml] [note] Copying correlation heatmap into run artifacts: D:\source\research\aq-spatial-reconstruction\configs\delhi\artifacts\train_validate_evaluate_avg_rep_final_norm\delhi_extra_trees_no2_124_20260508_120419_0\correlation_heatmap.png
+2026-05-08T12:04:25 [delhi_extra_trees_no2_124.yaml] [phase] 7/8 ( 87%) Writing run metadata
+2026-05-08T12:04:25 [delhi_extra_trees_no2_124.yaml] [phase] 8/8 (100%) Summarizing training outputs
+2026-05-08T12:04:25 [delhi_extra_trees_no2_124.yaml] [note] Training complete. Results written under D:\source\research\aq-spatial-reconstruction\configs\delhi\artifacts\train_validate_evaluate_avg_rep_final_norm\delhi_extra_trees_no2_124_20260508_120419_0

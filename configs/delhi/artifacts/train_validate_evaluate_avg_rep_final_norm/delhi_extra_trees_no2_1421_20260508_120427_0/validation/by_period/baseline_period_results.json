@@ -1,0 +1,90 @@
+[
+  {
+    "id": "baseline_average_of_other_stations",
+    "name": "Baseline: Average of Other Stations",
+    "algorithm_name": "Baseline: Average of Other Stations",
+    "period_results": [
+      {
+        "name": "period_01",
+        "period": {
+          "start": "2025-01-01T00:00:00",
+          "end": "2025-12-31T23:59:59"
+        },
+        "row_count": 7729,
+        "metrics": {
+          "MSE": 579.0027669513089,
+          "RMSE": 24.062476326249318,
+          "MAE": 19.71131797990253,
+          "R2": 0.04376786536206423,
+          "IA": 0.717408356521769
+        }
+      }
+    ]
+  },
+  {
+    "id": "baseline_replace_with_station_124",
+    "name": "Baseline: Replace with Station 124",
+    "algorithm_name": "Baseline: Replace with Station 124",
+    "period_results": [
+      {
+        "name": "period_01",
+        "period": {
+          "start": "2025-01-01T00:00:00",
+          "end": "2025-12-31T23:59:59"
+        },
+        "row_count": 7729,
+        "metrics": {
+          "MSE": 531.2570806055118,
+          "RMSE": 23.04901474261995,
+          "MAE": 17.660240652089534,
+          "R2": 0.12262061388102652,
+          "IA": 0.7836518567186912
+        }
+      }
+    ]
+  },
+  {
+    "id": "baseline_replace_with_station_1426",
+    "name": "Baseline: Replace with Station 1426",
+    "algorithm_name": "Baseline: Replace with Station 1426",
+    "period_results": [
+      {
+        "name": "period_01",
+        "period": {
+          "start": "2025-01-01T00:00:00",
+          "end": "2025-12-31T23:59:59"
+        },
+        "row_count": 7729,
+        "metrics": {
+          "MSE": 1242.5396594902318,
+          "RMSE": 35.2496760196492,
+          "MAE": 29.008045025229652,
+          "R2": -1.0520737011720631,
+          "IA": 0.5246568286853023
+        }
+      }
+    ]
+  },
+  {
+    "id": "baseline_replace_with_station_5024",
+    "name": "Baseline: Replace with Station 5024",
+    "algorithm_name": "Baseline: Replace with Station 5024",
+    "period_results": [
+      {
+        "name": "period_01",
+        "period": {
+          "start": "2025-01-01T00:00:00",
+          "end": "2025-12-31T23:59:59"
+        },
+        "row_count": 7729,
+        "metrics": {
+          "MSE": 588.0301401086816,
+          "RMSE": 24.2493327765669,
+          "MAE": 19.567150989778757,
+          "R2": 0.028859017257762187,
+          "IA": 0.7330725506770281
+        }
+      }
+    ]
+  }
+]

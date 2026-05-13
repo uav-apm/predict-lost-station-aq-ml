@@ -1,0 +1,10 @@
+# Shared baseline for Delhi Extra Trees NO2-only experiments.
+
+extends: delhi_extra_trees_base.yaml
+
+data:
+  target_pollutant: "NO2 (µg/m³)"
+
+model:
+  algorithm_name: Extra Trees (NO2)
+  target: "NO2 (µg/m³)"

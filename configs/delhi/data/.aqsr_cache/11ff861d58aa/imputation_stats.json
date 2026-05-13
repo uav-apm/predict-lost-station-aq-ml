@@ -1,0 +1,96 @@
+{
+  "before": {
+    "total_missing": 10708,
+    "missing_by_column": {
+      "PM2.5 (\u00b5g/m\u00b3)": 985,
+      "NO2 (\u00b5g/m\u00b3)": 414,
+      "RH (%)": 345,
+      "WS (m/s)": 8964
+    }
+  },
+  "after": {
+    "total_missing": 8516,
+    "missing_by_column": {
+      "PM2.5 (\u00b5g/m\u00b3)": 0,
+      "NO2 (\u00b5g/m\u00b3)": 0,
+      "RH (%)": 30,
+      "WS (m/s)": 8486
+    }
+  },
+  "before_by_station": {
+    "124": {
+      "total_missing": 638,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 402,
+        "NO2 (\u00b5g/m\u00b3)": 130,
+        "RH (%)": 53,
+        "WS (m/s)": 53
+      }
+    },
+    "1421": {
+      "total_missing": 549,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 248,
+        "NO2 (\u00b5g/m\u00b3)": 111,
+        "RH (%)": 95,
+        "WS (m/s)": 95
+      }
+    },
+    "1426": {
+      "total_missing": 253,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 74,
+        "NO2 (\u00b5g/m\u00b3)": 67,
+        "RH (%)": 56,
+        "WS (m/s)": 56
+      }
+    },
+    "5024": {
+      "total_missing": 9268,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 261,
+        "NO2 (\u00b5g/m\u00b3)": 106,
+        "RH (%)": 141,
+        "WS (m/s)": 8760
+      }
+    }
+  },
+  "after_by_station": {
+    "124": {
+      "total_missing": 0,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 0,
+        "WS (m/s)": 0
+      }
+    },
+    "1421": {
+      "total_missing": 2,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 1,
+        "WS (m/s)": 1
+      }
+    },
+    "1426": {
+      "total_missing": 4,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 2,
+        "WS (m/s)": 2
+      }
+    },
+    "5024": {
+      "total_missing": 8510,
+      "missing_by_column": {
+        "PM2.5 (\u00b5g/m\u00b3)": 0,
+        "NO2 (\u00b5g/m\u00b3)": 0,
+        "RH (%)": 27,
+        "WS (m/s)": 8483
+      }
+    }
+  }
+}

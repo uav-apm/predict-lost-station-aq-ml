@@ -1,0 +1,7 @@
+# Delhi NO2 Extra Trees experiment variant.
+
+extends: ../delhi_extra_trees_no2_base.yaml
+
+data:
+  target_station_id: "1426"
+  input_station_ids: ["124", "1421", "5024"]

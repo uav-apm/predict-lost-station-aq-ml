@@ -1,0 +1,89 @@
+{
+  "method": "drop_rows",
+  "dropped_rows": 1109,
+  "target_columns": [
+    "PM2.5 (\u00b5g/m\u00b3)",
+    "NO2 (\u00b5g/m\u00b3)"
+  ],
+  "columns": {
+    "PM2.5 (\u00b5g/m\u00b3)": {
+      "method": "drop_rows",
+      "selected_features": [],
+      "missing_before": 985,
+      "missing_after": 0
+    },
+    "NO2 (\u00b5g/m\u00b3)": {
+      "method": "drop_rows",
+      "selected_features": [],
+      "missing_before": 414,
+      "missing_after": 0
+    }
+  },
+  "group_col": "station_id",
+  "by_station": {
+    "124": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 402,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 130,
+          "missing_after": 0
+        }
+      }
+    },
+    "1421": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 248,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 111,
+          "missing_after": 0
+        }
+      }
+    },
+    "1426": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 74,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 67,
+          "missing_after": 0
+        }
+      }
+    },
+    "5024": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 261,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 106,
+          "missing_after": 0
+        }
+      }
+    }
+  }
+}

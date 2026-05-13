@@ -1,0 +1,39 @@
+# Shared baseline for Delhi Bi-LSTM experiments.
+#
+# Usage pattern:
+# - Keep Bi-LSTM-specific settings here.
+# - In station-specific child configs, extend this file and override only station ids.
+
+extends: ../../delhi_base.yaml
+data:
+  normalization: zscore
+model:
+  algorithm: src.lstm_regressor.LocalLSTMRegressor  # Local sklearn-compatible LSTM regressor class path.
+  params:
+    timesteps: 1
+    lstm_units: [64, 32]
+    bidirectional: true
+    dropout: 0.1
+    dense_units: 32
+    learning_rate: 0.001
+    batch_size: 64
+    epochs: 80
+    validation_split: 0.1
+    patience: 10
+    random_state: 42
+    fallback_on_missing_backend: false
+    verbose: 1
+  validation:
+    algorithm: random_search  # none | random_search | grid_search
+    metric: RMSE              # MSE | RMSE | MAE | R2 | IA
+    max_trials: 5             # random_search only
+    random_state: 42           # Seed used to sample random_search candidate combinations.
+    param_grid:
+      random_state: [42, 50, 100]
+      lstm_units:
+        - [64, 32]
+        - [32]
+      dropout: [0.1, 0.2]
+      batch_size: [32, 64]
+      learning_rate: [0.001, 0.0005]
+

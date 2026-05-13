@@ -1,0 +1,89 @@
+{
+  "method": "drop_rows",
+  "dropped_rows": 12721,
+  "target_columns": [
+    "PM2.5 (\u00b5g/m\u00b3)",
+    "NO2 (\u00b5g/m\u00b3)"
+  ],
+  "columns": {
+    "PM2.5 (\u00b5g/m\u00b3)": {
+      "method": "drop_rows",
+      "selected_features": [],
+      "missing_before": 9068,
+      "missing_after": 0
+    },
+    "NO2 (\u00b5g/m\u00b3)": {
+      "method": "drop_rows",
+      "selected_features": [],
+      "missing_before": 8010,
+      "missing_after": 0
+    }
+  },
+  "group_col": "station_id",
+  "by_station": {
+    "124": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 3580,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 2169,
+          "missing_after": 0
+        }
+      }
+    },
+    "1421": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 2011,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 2390,
+          "missing_after": 0
+        }
+      }
+    },
+    "1426": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 1441,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 1515,
+          "missing_after": 0
+        }
+      }
+    },
+    "5024": {
+      "columns": {
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 2036,
+          "missing_after": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "method": "drop_rows",
+          "selected_features": [],
+          "missing_before": 1936,
+          "missing_after": 0
+        }
+      }
+    }
+  }
+}

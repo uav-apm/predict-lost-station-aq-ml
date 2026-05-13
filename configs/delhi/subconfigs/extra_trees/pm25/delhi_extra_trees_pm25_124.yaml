@@ -1,0 +1,7 @@
+# Delhi PM2.5 Extra Trees experiment variant.
+
+extends: ../delhi_extra_trees_pm25_base.yaml
+
+data:
+  target_station_id: "124"
+  input_station_ids: ["5024", "1421", "1426"]

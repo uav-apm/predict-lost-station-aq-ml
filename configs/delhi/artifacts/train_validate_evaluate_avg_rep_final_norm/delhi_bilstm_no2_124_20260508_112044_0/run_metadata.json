@@ -1,0 +1,291 @@
+{
+  "created_at": "2026-05-08T11:26:39.966570",
+  "config_path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\subconfigs\\bilstm\\no2\\delhi_bilstm_no2_124.yaml",
+  "log_file": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\artifacts\\train_validate_evaluate_avg_rep_final_norm\\delhi_bilstm_no2_124_20260508_112044_0\\train.log",
+  "data_source": {
+    "mode": "folder",
+    "path": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data",
+    "files": [
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2019-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2020-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2021-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2022-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\124\\Raw_data-1Hr-2023-site_124_R_K_Puram_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2019_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2020_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2021_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2022_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1421\\Raw_data_1Hr_2023_site_1421_Dr._Karni_Singh_Shooting_Range_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2019-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2020-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2021-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2022-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\1426\\Raw_data-1Hr-2023-site_1426_Narela_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2019-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2020-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2021-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2022-site_5024_Alipur_Delhi_DPCC_1Hr.csv",
+      "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\5024\\Raw_data-1Hr-2023-site_5024_Alipur_Delhi_DPCC_1Hr.csv"
+    ]
+  },
+  "run_dir": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\artifacts\\train_validate_evaluate_avg_rep_final_norm\\delhi_bilstm_no2_124_20260508_112044_0",
+  "algorithm": "src.lstm_regressor.LocalLSTMRegressor",
+  "algorithm_name": "BiLSTM (NO2)",
+  "model_params": {
+    "verbose": 1,
+    "timesteps": 1,
+    "lstm_units": [
+      32
+    ],
+    "bidirectional": true,
+    "dropout": 0.2,
+    "dense_units": 32,
+    "learning_rate": 0.0005,
+    "batch_size": 64,
+    "epochs": 80,
+    "validation_split": 0.1,
+    "patience": 10,
+    "random_state": 100,
+    "fallback_on_missing_backend": false
+  },
+  "model_validation": {
+    "algorithm": "random_search",
+    "metric": "RMSE",
+    "direction": "min",
+    "validation_rows": 7646,
+    "validation_source": "data.validation_periods",
+    "trial_count": 5,
+    "best_score": 24.95022998206881,
+    "best_params": {
+      "verbose": 1,
+      "timesteps": 1,
+      "lstm_units": [
+        32
+      ],
+      "bidirectional": true,
+      "dropout": 0.2,
+      "dense_units": 32,
+      "learning_rate": 0.0005,
+      "batch_size": 64,
+      "epochs": 80,
+      "validation_split": 0.1,
+      "patience": 10,
+      "random_state": 100,
+      "fallback_on_missing_backend": false
+    },
+    "trials": [
+      {
+        "trial": 1,
+        "total_trials": 5,
+        "score": 25.370485383834,
+        "params": {
+          "random_state": 42,
+          "lstm_units": [
+            64,
+            32
+          ],
+          "dropout": 0.1,
+          "batch_size": 64,
+          "learning_rate": 0.0005
+        }
+      },
+      {
+        "trial": 2,
+        "total_trials": 5,
+        "score": 24.960253484088526,
+        "params": {
+          "random_state": 50,
+          "lstm_units": [
+            64,
+            32
+          ],
+          "dropout": 0.2,
+          "batch_size": 32,
+          "learning_rate": 0.001
+        }
+      },
+      {
+        "trial": 3,
+        "total_trials": 5,
+        "score": 25.26831252048335,
+        "params": {
+          "random_state": 50,
+          "lstm_units": [
+            32
+          ],
+          "dropout": 0.2,
+          "batch_size": 64,
+          "learning_rate": 0.001
+        }
+      },
+      {
+        "trial": 4,
+        "total_trials": 5,
+        "score": 25.02304393547419,
+        "params": {
+          "random_state": 100,
+          "lstm_units": [
+            64,
+            32
+          ],
+          "dropout": 0.1,
+          "batch_size": 64,
+          "learning_rate": 0.001
+        }
+      },
+      {
+        "trial": 5,
+        "total_trials": 5,
+        "score": 24.95022998206881,
+        "params": {
+          "random_state": 100,
+          "lstm_units": [
+            32
+          ],
+          "dropout": 0.2,
+          "batch_size": 64,
+          "learning_rate": 0.0005
+        }
+      }
+    ]
+  },
+  "model_optimization": {
+    "algorithm": "random_search",
+    "metric": "RMSE",
+    "direction": "min",
+    "validation_rows": 7646,
+    "validation_source": "data.validation_periods",
+    "trial_count": 5,
+    "best_score": 24.95022998206881,
+    "best_params": {
+      "verbose": 1,
+      "timesteps": 1,
+      "lstm_units": [
+        32
+      ],
+      "bidirectional": true,
+      "dropout": 0.2,
+      "dense_units": 32,
+      "learning_rate": 0.0005,
+      "batch_size": 64,
+      "epochs": 80,
+      "validation_split": 0.1,
+      "patience": 10,
+      "random_state": 100,
+      "fallback_on_missing_backend": false
+    },
+    "trials": [
+      {
+        "trial": 1,
+        "total_trials": 5,
+        "score": 25.370485383834,
+        "params": {
+          "random_state": 42,
+          "lstm_units": [
+            64,
+            32
+          ],
+          "dropout": 0.1,
+          "batch_size": 64,
+          "learning_rate": 0.0005
+        }
+      },
+      {
+        "trial": 2,
+        "total_trials": 5,
+        "score": 24.960253484088526,
+        "params": {
+          "random_state": 50,
+          "lstm_units": [
+            64,
+            32
+          ],
+          "dropout": 0.2,
+          "batch_size": 32,
+          "learning_rate": 0.001
+        }
+      },
+      {
+        "trial": 3,
+        "total_trials": 5,
+        "score": 25.26831252048335,
+        "params": {
+          "random_state": 50,
+          "lstm_units": [
+            32
+          ],
+          "dropout": 0.2,
+          "batch_size": 64,
+          "learning_rate": 0.001
+        }
+      },
+      {
+        "trial": 4,
+        "total_trials": 5,
+        "score": 25.02304393547419,
+        "params": {
+          "random_state": 100,
+          "lstm_units": [
+            64,
+            32
+          ],
+          "dropout": 0.1,
+          "batch_size": 64,
+          "learning_rate": 0.001
+        }
+      },
+      {
+        "trial": 5,
+        "total_trials": 5,
+        "score": 24.95022998206881,
+        "params": {
+          "random_state": 100,
+          "lstm_units": [
+            32
+          ],
+          "dropout": 0.2,
+          "batch_size": 64,
+          "learning_rate": 0.0005
+        }
+      }
+    ]
+  },
+  "feature_names": [
+    "neighbor__5024",
+    "neighbor__1421",
+    "neighbor__1426"
+  ],
+  "target_names": [
+    "target_value"
+  ],
+  "target_station_id": "124",
+  "input_station_ids": [
+    "5024",
+    "1421",
+    "1426"
+  ],
+  "allow_target_history": false,
+  "station_history_lags": 1,
+  "target_history_lags": 1,
+  "time_features": {
+    "enabled": false,
+    "attributes": [
+      "month",
+      "day",
+      "day_of_week",
+      "hour"
+    ]
+  },
+  "train_rows": 33356,
+  "test_rows": 0,
+  "imputation_cache_dir": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\data\\.aqsr_cache\\aaf33c04a6f5",
+  "used_imputation_cache": false,
+  "training_imputation_plot": null,
+  "training_imputation_plots": [],
+  "training_loss_plot": null,
+  "normalization_stats_file": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\artifacts\\train_validate_evaluate_avg_rep_final_norm\\delhi_bilstm_no2_124_20260508_112044_0\\norm_stats.json",
+  "saved_training_normalization": true,
+  "run_group_dir": "D:\\source\\research\\aq-spatial-reconstruction\\configs\\delhi\\artifacts\\train_validate_evaluate_avg_rep_final_norm",
+  "run_comment": "train_validate_evaluate_avg_rep_final_norm",
+  "missing_value_strategy": "drop"
+}

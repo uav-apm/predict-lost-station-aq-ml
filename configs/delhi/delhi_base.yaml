@@ -1,0 +1,71 @@
+# Shared baseline for Delhi experiments.
+#
+# Usage pattern:
+# - Keep common settings here.
+# - In child configs, use `extends: delhi_base.yaml` and override only changed keys.
+
+data:
+  folder: configs/delhi/data  # Workspace-relative input data folder, stable even when child configs live in nested subfolders.
+  file_pattern: "**/*.csv"  # Glob used when scanning `folder` for station files.
+  datetime_col: Timestamp  # Timestamp column parsed to pandas datetime.
+  sort_col: Timestamp  # Column used for deterministic row ordering after load.
+  columns: ["PM2.5 (µg/m³)", "NO2 (µg/m³)", "RH (%)", "WS (m/s)"]  # Raw columns required for downstream preprocessing and modeling.
+  normalization: none  # Feature scaling: none | zscore | minmax | robust | maxabs.
+  station_id_col: station_id  # Column that identifies station ids in loaded rows.
+  target_station_id: "5024"  # Station to reconstruct/forecast.
+  input_station_ids: ["124", "1421", "1426"]  # Neighbor stations used as model features.
+  station_history_lags: 1  # Number of timesteps per neighbor station used as features; 1 means current value only.
+  train_years: ["2019", "2020", "2021", "2022", "2023"]  # Full years included in training split selection.
+  train_periods:  # Dedicated training sample.
+    - start: "2019"
+      end: "2023"
+  target_pollutant: "PM2.5 (µg/m³)"  # Default single-target setup; NO2 variants override this field.
+  impute_columns: ["PM2.5 (µg/m³)", "NO2 (µg/m³)"]  # Columns checked for missing values; rows with missing values are dropped.
+  missing_value_strategy: drop  # Rows containing missing values in impute_columns are dropped.
+  rebuild_cache: false  # true forces regeneration of cache artifacts (correlation/heatmap).
+  validation_periods:  # Dedicated hyperparameter-tuning sample (used during train/model.validation).
+    - start: "2024"
+      end: "2024"
+  testing_periods:  # Dedicated held-out test sample (used during evaluation/testing).
+    - start: "2025"  # Supported granularity: YYYY, YYYY-MM, YYYY-MM-DD.
+      end: "2025"
+    # - start: "2025-01"
+    #   end: "2025-01"
+    # - start: "2025-04"
+    #   end: "2025-04"
+    # - start: "2025-07"
+    #   end: "2025-07"
+    # - start: "2025-10"
+    #   end: "2025-10"
+
+model:
+  datetime_col: Timestamp  # Structural datetime column used by model pipeline.
+  params:  # Estimator constructor kwargs passed to selected `algorithm`.
+    verbose: 1
+
+
+artifacts:
+  dir: configs/delhi/artifacts  # Central output folder for all Delhi config variants (workspace-relative path).
+  # Pass --comment "your-note" at train time to create configs/delhi/artifacts/<your-note>/<config>_<timestamp>_<n>/.
+  dump_training_data: true  # true writes training_dump/ with pre-fit matrices and summaries.
+  save_training_normalization: true  # true persists norm_stats.json from training for reuse by eval/predict.
+
+eval:
+  horizon: 0  # 0 = nowcast (same timestamp), k>=1 = k-step-ahead forecast.
+  store_details: true  # true writes validation_details.csv with feature values per evaluated row.
+  use_training_normalization: true  # true reuses saved training normalization; false fits normalization on evaluation rows instead.
+  separate_validation_period_results: true  # true + multiple data.validation_periods writes per-period validation/metrics outputs under validation/by_period/.
+  only_separate_validation_period_results: false  # true disables combined validation outputs and keeps only per-period outputs (requires 2+ validation_periods).
+
+plot:
+  title_templates:
+    # All templates can use placeholders: {target}, {algorithm}, {station_id}, {pollutant}, {period_name}, {period_start}, {period_end}, {run_dir}
+    prediction_static: "Prediction vs Actual ({target})\n{algorithm} | Station {station_id}"
+    scatter_static: "Actual vs Predicted - {target}\n{algorithm} | Station {station_id}"
+    baseline_scatter_static: "Actual vs Predicted - {target}\n{algorithm} | Station {station_id}"
+    metrics_by_period: "Metrics by Period - Station {station_id} - {pollutant}"
+    metrics_by_station: "Metrics by Station - {pollutant} - {period_name}\n{period_start} to {period_end}"
+  metrics_graph:
+    metrics: [RMSE,R2]  # Choose which metrics appear in station/pollutant comparison charts.
+    group_output_by: pollutant  # pollutant = charts grouped under pollutant folders, station = grouped under station folders.
+    comparison_mode: stations  # validation_periods = x-axis is validation windows; stations = x-axis is stations.

@@ -1,0 +1,2 @@
+target_station_id,validation_period_name,validation_period_start,validation_period_end,validation_period,row_count,MSE,RMSE,MAE,R2,IA
+124,period_01,2025-01-01T00:00:00,2025-12-31T23:59:59,2025-01-01T00:00:00 -> 2025-12-31T23:59:59,7729,420.8701259298884,20.515119447127,16.03546390752419,0.4216329703365279,0.7056498782940004

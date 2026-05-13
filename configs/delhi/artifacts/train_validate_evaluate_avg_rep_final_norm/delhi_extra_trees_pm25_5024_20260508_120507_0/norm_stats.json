@@ -1,0 +1,13 @@
+{
+  "method": "none",
+  "mu": {
+    "neighbor__124": 0.0,
+    "neighbor__1421": 0.0,
+    "neighbor__1426": 0.0
+  },
+  "sigma": {
+    "neighbor__124": 1.0,
+    "neighbor__1421": 1.0,
+    "neighbor__1426": 1.0
+  }
+}

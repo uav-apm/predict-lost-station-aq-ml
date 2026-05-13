@@ -1,0 +1,73 @@
+# Smoke-test example profile for multi-station PM2.5 reconstruction.
+# This profile mirrors a CPCB-style layout where each CSV represents one station for one year.
+
+data:
+  folder: data  # Relative folder containing one or more CSV files for this profile.
+  file_pattern: "**/*.csv"  # Default glob pattern when scanning the profile data folder.
+  datetime_col: Timestamp  # Timestamp column parsed into datetimes.
+  sort_col: Timestamp  # Column used to sort the raw long-form station table.
+  columns: ["PM2.5 (µg/m³)", "NO2 (µg/m³)", "RH (%)", "WS (m/s)"]  # Optional documented columns of interest; preprocessing still inspects all loaded numeric columns.
+  train_frac: 0.7  # Fallback split if explicit year/day selections are not used.
+  normalization: zscore  # Feature normalization type: none, zscore, minmax, robust, or maxabs.
+  station_id_col: null  # Set this only if the CSV already contains station ids as a column.
+  station_id_from: filename  # Infer station ids from the file name when station_id_col is missing.
+  target_station_id: "target_station"  # Station whose PM2.5 is reconstructed or forecast.
+  input_station_ids: ["station_a", "station_b", "station_c"]  # Neighbor stations used as predictors.
+  station_files:  # Optional explicit mapping of many years and many station files.
+    target_station: [target_station_2024.csv, target_station_2025.csv]
+    station_a: [station_a_2024.csv, station_a_2025.csv]
+    station_b: [station_b_2024.csv, station_b_2025.csv]
+    station_c: [station_c_2024.csv, station_c_2025.csv]
+  train_years: ["2024"]  # Complete years used for training when available.
+  train_periods:
+    - start: "2024-01-01"
+      end: "2024-12-31"  # Concrete example of a full-year training range.
+  target_pollutant: "PM2.5 (µg/m³)"  # Single-target mode; use per-target configs for pollutant-specific experiments.
+  station_history_lags: 1  # Number of timesteps per input station used as features; 1 means current value only.
+  impute_columns: ["PM2.5 (µg/m³)", "NO2 (µg/m³)"]  # Columns checked for missing values; rows with missing values are dropped.
+  missing_value_strategy: drop  # Rows containing missing values in impute_columns are dropped.
+  rebuild_cache: false  # Set true to force preprocessing, correlation, heatmap, and cache regeneration on the next run.
+  validation_periods:  # Dedicated tuning sample used by model.validation during training.
+    - start: "2025-01-15"
+      end: "2025-01-15"  # Concrete one-day validation window; month or year ranges also work.
+  testing_periods:  # Dedicated held-out testing sample used by evaluation.
+    - start: "2025-01-16"
+      end: "2025-01-16"
+
+model:
+  target: "PM2.5 (µg/m³)"  # Must align with data.target_pollutant.
+  datetime_col: Timestamp  # Shared structural datetime field used throughout the pipeline.
+  algorithm: random_forest  # Built-in alias (`random_forest`, `extra_trees`) or fully qualified estimator class path.
+  params:
+    verbose: 1  # Enable sklearn RandomForestRegressor training progress logs.
+  validation:
+    algorithm: none  # none | random_search | grid_search
+    metric: RMSE
+    max_trials: 5
+    random_state: 42
+    param_grid:
+      n_estimators: [100, 200]
+      max_depth: [12, 20]
+
+artifacts:
+  dir: artifacts  # Profile-local artifact folder for timestamped training runs.
+  # Pass --comment "your-note" at train time to create artifacts/<your-note>/<config>_<timestamp>_<n>/.
+  dump_training_data: false  # When true, write pre-fit training inputs and summaries into artifacts/<run>/training_dump/.
+  save_training_normalization: true  # Default: persist norm_stats.json from training so eval/predict reuse training-set scaling.
+  eval_run_dir: null  # Optional saved run directory to use for eval when not passing --run-dir.
+
+eval:
+  horizon: 1  # One-step-ahead prediction horizon for the starter scaffold.
+  store_details: true  # When true, export validation_details.csv with feature columns used per row.
+  use_training_normalization: true  # Default: load saved training normalization stats instead of fitting scaling on evaluation rows.
+  separate_validation_period_results: false  # When true and multiple validation_periods are set, writes separate metrics/validation files for each period under validation/by_period/.
+  only_separate_validation_period_results: false  # When true, disables combined validation outputs and keeps only per-period outputs (requires 2+ validation_periods).
+  cross_validation:
+    folds: []  # Example:
+    # - name: fold_1
+    #   train_periods:
+    #     - start: "2024-01-01"
+    #       end: "2024-06-30"
+    #   validation_periods:
+    #     - start: "2025-01-15"
+    #       end: "2025-01-15"
