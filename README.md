@@ -1,6 +1,6 @@
-# AQ Spatial Reconstruction
+# Predicting Air Quality at Disaster-Lost Stations Using Neighbouring Sensors and Machine Learning
 
-`aq-spatial-reconstruction` is a research scaffold for reconstructing or forecasting one air-quality station from neighboring stations using a tabular preprocessing pipeline and configurable regressors.
+This is a research scaffold for reconstructing or forecasting one air-quality station from neighboring stations using a tabular preprocessing pipeline and configurable regressors.
 
 ## What It Does
 
