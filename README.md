@@ -17,7 +17,7 @@ This is a research scaffold for reconstructing or forecasting one air-quality st
 ## Project Layout
 
 ```text
-aq-spatial-reconstruction/
+root/
   src/
   configs/
   docs/
