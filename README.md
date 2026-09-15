@@ -2,6 +2,15 @@
 
 This is a research scaffold for reconstructing or forecasting one air-quality station from neighboring stations using a tabular preprocessing pipeline and configurable regressors.
 
+## Paper
+
+This repository accompanies the paper *"Disaster-Resilient Air Quality Monitoring: Machine Learning Reconstruction from Neighbouring Sensors,"*
+accepted at [ICT-DM'26 (International Conference on ICT for Disaster
+Management)](https://ict-dm.inria.fr/2026/index.html). The accepted/camera-ready PDF will be added to this repository
+once available. Some tables in the camera-ready manuscript were condensed to
+meet the page limit; the full data behind them is preserved in
+[Paper Supplementary Tables](docs/paper-supplementary-tables.md).
+
 ## What It Does
 
 - loads one CSV, a folder of CSVs, or an explicit station-to-file mapping
@@ -285,6 +294,7 @@ aq-spatial-reconstruction-eval ^
 - [Training Process Internals](docs/training-process.md)
 - [Debugging and Development](docs/debugging.md)
 - [Testing Guide](docs/testing.md)
+- [Paper Supplementary Tables](docs/paper-supplementary-tables.md)
 
 ## Notes
 
