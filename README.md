@@ -6,8 +6,9 @@ This is a research scaffold for reconstructing or forecasting one air-quality st
 
 This repository accompanies the paper *"Disaster-Resilient Air Quality Monitoring: Machine Learning Reconstruction from Neighbouring Sensors,"*
 accepted at [ICT-DM'26 (International Conference on ICT for Disaster
-Management)](https://ict-dm.inria.fr/2026/index.html). The accepted/camera-ready PDF will be added to this repository
-once available. Some tables in the camera-ready manuscript were condensed to
+Management)](https://ict-dm.inria.fr/2026/index.html). The accepted  PDF is included in this repository:
+[Disaster-Resilient Air Quality Monitoring (PDF)](accepted%20paper/Disaster-Resilient%20Air%20Quality%20Monitoring%20Machine.pdf).
+Some tables in the final manuscript were condensed to
 meet the page limit; the full data behind them is preserved in
 [Paper Supplementary Tables](docs/paper-supplementary-tables.md).
 
@@ -294,6 +295,7 @@ aq-spatial-reconstruction-eval ^
 - [Training Process Internals](docs/training-process.md)
 - [Debugging and Development](docs/debugging.md)
 - [Testing Guide](docs/testing.md)
+- [Accepted Paper (PDF)](accepted%20paper/Disaster-Resilient%20Air%20Quality%20Monitoring%20Machine.pdf)
 - [Paper Supplementary Tables](docs/paper-supplementary-tables.md)
 
 ## Notes
