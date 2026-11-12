@@ -316,3 +316,12 @@ aq-spatial-reconstruction-eval ^
 - `missing_pct_of_all_rows` means the percentage of rows in that column that are missing, out of all rows in the analyzed table.
 - `present_pct_of_all_rows` is the complementary percentage of non-missing rows.
 - The example config now includes concrete values for the new period-based settings, and leaves a commented example for time-series cross-validation so the default smoke-test behavior stays simple.
+
+## Acknowledgements
+
+This publication has emanated from research jointly funded by Taighde Éireann – Research Ireland
+under Grant Number 13/RC/2094_2 ([Lero, the Research Ireland Centre for Software](https://lero.ie/)),
+and co-funded by the European Union under the Systems, Methods, Context (SyMeCo) programme,
+Grant Agreement Number 101081459. Views and opinions expressed are, however, those of the author(s)
+only and do not necessarily reflect those of the European Union or the European Research Executive
+Agency. Neither the European Union nor the granting authority can be held responsible for them.
