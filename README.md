@@ -4,8 +4,10 @@ This is a research scaffold for reconstructing or forecasting one air-quality st
 
 > **📢 Presented at ICT-DM'2026:** This work was presented on **9 November 2026**
 > at [ICT-DM'2026](https://ict-dm.inria.fr/2026/index.html) in Dubai, UAE, in an online presentation in
-> *Session 1: AI for Environmental Monitoring & Forecasting*. See the
-> [conference program entry](https://ict-dm.inria.fr/2026/program.html#:~:text=1.%20Disaster%2DResilient%20Air%20Quality%20Monitoring%3A%20Machine%20Learning%20Reconstruction%20from%20Neighbouring%20Sensors).
+> *Session 1: AI for Environmental Monitoring & Forecasting*. Slides:
+> [PDF](docs/conference/ICT-DM26_Disaster-Resilient_AQ_Monitoring.pdf) ·
+> [PPTX](docs/conference/ICT-DM26_Disaster-Resilient_AQ_Monitoring.pptx).
+> See the [conference program entry](https://ict-dm.inria.fr/2026/program.html#:~:text=1.%20Disaster%2DResilient%20Air%20Quality%20Monitoring%3A%20Machine%20Learning%20Reconstruction%20from%20Neighbouring%20Sensors).
 
 ## Paper
 
@@ -15,6 +17,7 @@ accepted at [ICT-DM'2026 (International Conference on Information and Communicat
 Management)](https://ict-dm.inria.fr/2026/index.html), 9–11 November 2026, Dubai, UAE.
 
 - **Conference presentation:** [ICT-DM'2026 program, Day 1, Session 1](https://ict-dm.inria.fr/2026/program.html#:~:text=1.%20Disaster%2DResilient%20Air%20Quality%20Monitoring%3A%20Machine%20Learning%20Reconstruction%20from%20Neighbouring%20Sensors)
+- **Presentation slides (in this repository):** [PDF](docs/conference/ICT-DM26_Disaster-Resilient_AQ_Monitoring.pdf) (viewable in the browser) · [PPTX](docs/conference/ICT-DM26_Disaster-Resilient_AQ_Monitoring.pptx) (original PowerPoint)
 - **Publication record:** [University of Galway Research Repository](https://research.universityofgalway.ie/en/publications/disaster-resilient-air-quality-monitoring-machine-learning-recons/)
 - **Accepted PDF (in this repository):** [Disaster-Resilient Air Quality Monitoring (PDF)](accepted%20paper/Disaster-Resilient%20Air%20Quality%20Monitoring%20Machine.pdf)
 
