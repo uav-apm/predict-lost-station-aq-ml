@@ -14,3 +14,4 @@ tests/.tmp/
 tests/_tmp/
 # configs/*/outputs/*
 # configs/*/artifacts/*
+docs/presentation/*
